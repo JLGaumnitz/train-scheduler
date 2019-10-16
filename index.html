@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Link to Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Faster+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+
+    <!-- Link to my CSS file -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Link to Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-database.js"></script>
+
+    <!-- Link to Moment.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+    <title>Train Scheduler</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- Display Heading with Current Time -->
+        <div class="jumbotron jumbotron-fluid">
+            <h1 class="display-4">TRAIN SCHEDULE</h1>
+            <hr class="my-4">
+            <h2 id="currentTime"></h2>
+            <p class="lead">KEEPING YOU ON TIME</p>
+        </div>
+
+        <!--Table with Train Information -->
+        <div class="container">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-header schedule-header">
+                    Train Schedule
+                </div>
+                <div class="card-body">
+                    <table
+                        class="table table-striped table-dark table-responsive-sm table-responsive-md train-schedule-table"
+                        id="train-table">
+                        <thead class="train-schedule-head">
+                            <tr>
+                                <th scope="col">Train #</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Next Arrival</th>
+                                <th scope="col">Minutes to Arrival</th>
+                                <th scope="col">Platform #</th>
+                            </tr>
+                        </thead>
+                        <tbody id="trainScheduleBody"></tbody>
+                    </table>
+
+                </div>
+            </div>
+
+
+            <!-- Form for Administrator Entry -->
+
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-header form-header">
+                    Add Train to Schedule
+                </div>
+                <div class="card-body">
+                    <form>
+                        <label for="formAddTrainNumber"> Train Number</label>
+                        <input type="text" class="form-control" id="formTrainNumber" placeholder="Add Train Number">
+
+                        <label for="formAddTrainDestination">Destination</label>
+                        <input type="text" class="form-control" id="formDestination"
+                            placeholder="Add City or Station Name">
+
+                        <label for="formAddTrainFirstTime">First Train Time (24-hour format)</label>
+                        <input type="text" class="form-control" id="formFirstTime"
+                            placeholder="Add Start Time (24-hour format">
+
+                        <label for="formAddTrainFrequency">Frequency (in minutes)</label>
+                        <input type="text" class="form-control" id="formFrequency"
+                            placeholder="Add Train's Trip Frequency (in minutes)">
+
+                        <label for="formAddTrainPlatform">Platform</label>
+                        <input type="text" class="form-control" id="formPlatform" placeholder="Add Train's Platform">
+
+                        <button type="submit" class="btn btn-warning mt-2" id="add-train-btn">Add Train</a>
+                </div>
+                </form>
+            </div>
+<!--Still to style footer -->
+            Photo by Jesse Mills on Unsplash
+        </div>
+
+        <!-- Link to jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+        <!-- Link to JavaScript file -->
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>

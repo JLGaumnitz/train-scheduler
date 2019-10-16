@@ -1,0 +1,24 @@
+.jumbotron {
+    background-image: url(../images/jesse-mills-b4dAhP7W89c-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Faster One', cursive;
+    font-size: 64px;
+    color: white;
+}
+
+hr {
+    color: yellow;
+    border: 4px;
+}
+.lead {
+    text-align: center;
+    font-family: 'Player', cursive;
+    font-weight: bold;
+    color: white;
+}
