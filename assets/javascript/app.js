@@ -1,11 +1,11 @@
 var firebaseConfig = {
-  apiKey: "AIzaSyC5VmhJwHC4al2OwVxsyYxQMPAPv71SjxU",
-  authDomain: "train-scheduler-jlg.firebaseapp.com",
-  databaseURL: "https://train-scheduler-jlg.firebaseio.com",
-  projectId: "train-scheduler-jlg",
-  storageBucket: "train-scheduler-jlg.appspot.com",
-  messagingSenderId: "207176222467",
-  appId: "1:207176222467:web:d157a3d3826da9b77fcb36"
+  apiKey: "AIzaSyDhA3rTF7xo-dFMOdjblxqeGfvjNjwF7BY",
+  authDomain: "jlg-project-1.firebaseapp.com",
+  databaseURL: "https://jlg-project-1.firebaseio.com",
+  projectId: "jlg-project-1",
+  storageBucket: "jlg-project-1.appspot.com",
+  messagingSenderId: "929921824755",
+  appId: "1:929921824755:web:db113d1d32dc64db090486"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -51,7 +51,7 @@ $("add-train-btn").on("click", function (event) {
   $("#formPlatform").val("")
 });
 
-// Create a firebase event for adding the data from the new trains and then updating the DOM.
+// Create a firebase event for addition of the data from the new trains and then updating the DOM.
 database.ref().on("child_added", function (childSnapshot, prevChildKey) {
   console.log(childSnapshot.val());
 
@@ -69,7 +69,7 @@ database.ref().on("child_added", function (childSnapshot, prevChildKey) {
   console.log(trainFrequency);
   console.log(trainPlatform);
 
-  // Process for calculating the Next Arrival and Minutes to Arrival fields>>>
+  // Calculation of the Next Arrival and Minutes to Arrival fields>>>
 
   // Make sure the first train time is after the eventual current time.
   var firstTrainTimeConvert = moment(firstTrainTime, "hh:mm a").subtract(1, "years");
