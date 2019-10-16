@@ -38,7 +38,7 @@
         <div class="jumbotron jumbotron-fluid">
             <h1 class="display-4">TRAIN SCHEDULE</h1>
             <hr class="my-4">
-            <h2 id="currentTime"></h2>
+            <!--ADD CURRENT TIME HERE: <h2 id="currentTime"></h2> -->
             <p class="lead">KEEPING YOU ON TIME</p>
         </div>
 
@@ -76,30 +76,31 @@
                 </div>
                 <div class="card-body">
                     <form>
-                        <label for="formAddTrainNumber"> Train Number</label>
+                        <label for="formTrainNumber"> Train Number</label>
                         <input type="text" class="form-control" id="formTrainNumber" placeholder="Add Train Number">
 
-                        <label for="formAddTrainDestination">Destination</label>
+                        <label for="formDestination">Destination</label>
                         <input type="text" class="form-control" id="formDestination"
                             placeholder="Add City or Station Name">
 
-                        <label for="formAddTrainFirstTime">First Train Time (24-hour format)</label>
+                        <label for="formFirstTime">First Train Time (24-hour format)</label>
                         <input type="text" class="form-control" id="formFirstTime"
                             placeholder="Add Start Time (24-hour format">
 
-                        <label for="formAddTrainFrequency">Frequency (in minutes)</label>
+                        <label for="formFrequency">Frequency (in minutes)</label>
                         <input type="text" class="form-control" id="formFrequency"
                             placeholder="Add Train's Trip Frequency (in minutes)">
 
-                        <label for="formAddTrainPlatform">Platform</label>
+                        <label for="formPlatform">Platform</label>
                         <input type="text" class="form-control" id="formPlatform" placeholder="Add Train's Platform">
 
-                        <button type="submit" class="btn btn-warning mt-2" id="add-train-btn">Add Train</a>
+                        <button type="submit" class="btn btn-warning mt-2" id="add-train-btn">Add Train</button>
+                    </form>
                 </div>
-                </form>
             </div>
-<!--Still to style footer -->
+            <!--STILL LEFT TO STYLE: footer -->
             Photo by Jesse Mills on Unsplash
+        </div>
         </div>
 
         <!-- Link to jQuery CDN -->
@@ -107,7 +108,7 @@
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
         <!-- Link to JavaScript file -->
-        <script type="text/javascript" src="assets/javascript/app.js"></script>
+        <script src="assets/javascript/app.js"></script>
 
 </body>
 
