@@ -38,7 +38,7 @@
         <div class="jumbotron jumbotron-fluid">
             <h1 class="display-4">TRAIN SCHEDULE</h1>
             <hr class="my-4">
-            <!--ADD CURRENT TIME HERE: <h2 id="currentTime"></h2> -->
+            <!--Would like to add CURRENT TIME here: <h2 id="currentTime"></h2> -->
             <p class="lead">KEEPING YOU ON TIME</p>
         </div>
 
@@ -58,7 +58,6 @@
                                 <th scope="col">Destination</th>
                                 <th scope="col">Next Arrival</th>
                                 <th scope="col">Minutes to Arrival</th>
-                                <th scope="col">Platform #</th>
                             </tr>
                         </thead>
                         <tbody id="trainScheduleBody"></tbody>
@@ -83,16 +82,13 @@
                         <input type="text" class="form-control" id="formDestination"
                             placeholder="Add City or Station Name">
 
-                        <label for="formFirstTime">First Train Time (24-hour format)</label>
+                        <label for="formFirstTime">First Train Time (24-hour format: HH:mm)</label>
                         <input type="text" class="form-control" id="formFirstTime"
-                            placeholder="Add Start Time (24-hour format">
+                            placeholder="Add Start Time (24-hour format)">
 
                         <label for="formFrequency">Frequency (in minutes)</label>
                         <input type="text" class="form-control" id="formFrequency"
                             placeholder="Add Train's Trip Frequency (in minutes)">
-
-                        <label for="formPlatform">Platform</label>
-                        <input type="text" class="form-control" id="formPlatform" placeholder="Add Train's Platform">
 
                         <button type="submit" class="btn btn-warning mt-2" id="add-train-btn">Add Train</button>
                     </form>
