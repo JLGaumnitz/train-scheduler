@@ -34,12 +34,13 @@
 <body>
     <div class="wrapper">
 
-        <!-- Display Heading with Current Time -->
+        <!-- Display Heading -->
         <div class="jumbotron jumbotron-fluid">
-            <h1 class="display-4">TRAIN SCHEDULE</h1>
-            <hr class="my-4">
-            <!--Would like to add CURRENT TIME here: <h2 id="currentTime"></h2> -->
-            <p class="lead">KEEPING YOU ON TIME</p>
+            <h1 class="display-4">TRAIN 
+           <br>
+                SCHEDULER</h1>
+              <!--Would like to add CURRENT TIME here: <h2 id="currentTime"></h2> -->
+            <p class="lead">KEEPING OUR PASSENGERS ON TIME</p>
         </div>
 
         <!--Table with Train Information -->
@@ -54,10 +55,10 @@
                         id="train-table">
                         <thead class="train-schedule-head">
                             <tr>
-                                <th scope="col">Train #</th>
+                                <th scope="col">Train Name</th>
                                 <th scope="col">Destination</th>
                                 <th scope="col">Next Arrival</th>
-                                <th scope="col">Minutes to Arrival</th>
+                                <th scope="col">Minutes Away</th>
                             </tr>
                         </thead>
                         <tbody id="trainScheduleBody"></tbody>
@@ -75,8 +76,8 @@
                 </div>
                 <div class="card-body">
                     <form>
-                        <label for="formTrainNumber"> Train Number</label>
-                        <input type="text" class="form-control" id="formTrainNumber" placeholder="Add Train Number">
+                        <label for="formTrainName"> Train Name</label>
+                        <input type="text" class="form-control" id="formTrainName" placeholder="Add Train Name">
 
                         <label for="formDestination">Destination</label>
                         <input type="text" class="form-control" id="formDestination"
@@ -84,7 +85,7 @@
 
                         <label for="formFirstTime">First Train Time (24-hour format: HH:mm)</label>
                         <input type="text" class="form-control" id="formFirstTime"
-                            placeholder="Add Start Time (24-hour format)">
+                            placeholder="Add Start Time (00:00)">
 
                         <label for="formFrequency">Frequency (in minutes)</label>
                         <input type="text" class="form-control" id="formFrequency"
@@ -94,8 +95,9 @@
                     </form>
                 </div>
             </div>
-            <!--STILL LEFT TO STYLE: footer -->
-            Photo by Jesse Mills on Unsplash
+            <div class="photo-credit">
+                   Photo by Jesse Mills on Unsplash
+            </div>
         </div>
         </div>
 

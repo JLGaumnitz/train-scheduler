@@ -2,7 +2,8 @@
     background-image: url(../images/jesse-mills-b4dAhP7W89c-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 100%;
+    background-size: 77%;
+    background-clip: border-box;
 }
 
 h1 {
@@ -12,13 +13,29 @@ h1 {
     color: white;
 }
 
-hr {
-    color: yellow;
-    border: 4px;
-}
+
 .lead {
     text-align: center;
-    font-family: 'Player', cursive;
     font-weight: bold;
     color: white;
+}
+
+.card-header {
+    background-color: #f1d117 ;
+    color: black;
+    font: 'Player', cursive;
+    font-weight: bold;
+
+}
+.btn {
+    background-color: #f1d117 ;
+    color: black;
+    font: 'Player', cursive;
+    font-weight: bold;
+}
+
+.photo-credit {
+    text-align: center;
+    font-family: 'Player', cursive;
+    font-size: 1em;
 }
