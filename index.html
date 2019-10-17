@@ -36,11 +36,11 @@
 
         <!-- Display Heading -->
         <div class="jumbotron jumbotron-fluid">
-            <h1 class="display-4">TRAIN 
+            <h1>TRAIN 
            <br>
                 SCHEDULER</h1>
               <!--Would like to add CURRENT TIME here: <h2 id="currentTime"></h2> -->
-            <p class="lead">KEEPING OUR PASSENGERS ON TIME</p>
+            <p class="lead">Keeping Busy People Moving</p>
         </div>
 
         <!--Table with Train Information -->
@@ -82,15 +82,18 @@
                         <label for="formDestination">Destination</label>
                         <input type="text" class="form-control" id="formDestination"
                             placeholder="Add City or Station Name">
-
+                    <div class="form-row">
+                            <div class="col-7 pt-2">
                         <label for="formFirstTime">First Train Time (24-hour format: HH:mm)</label>
                         <input type="text" class="form-control" id="formFirstTime"
                             placeholder="Add Start Time (00:00)">
-
+                        </div>
+                        <div class="col pt-2">
                         <label for="formFrequency">Frequency (in minutes)</label>
                         <input type="text" class="form-control" id="formFrequency"
                             placeholder="Add Train's Trip Frequency (in minutes)">
-
+                    </div>
+                        </div>
                         <button type="submit" class="btn btn-warning mt-2" id="add-train-btn">Add Train</button>
                     </form>
                 </div>
