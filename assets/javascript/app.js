@@ -41,6 +41,12 @@ $(document).ready(function () {
       firstTrainTime: formFirstTrainTime,
       frequency: formFrequency,
     })
+
+        // Clear the form's values.
+        $("#formTrainName").val("");
+        $("#formDestination").val("");
+        $("#formFirstTime").val("");
+        $("#formFrequency").val("");
   })
 
   // Firebase watcher + initial loader (Per in-class lesson: This code behaves similarly to .on("value"))
@@ -78,13 +84,6 @@ $(document).ready(function () {
   },
     function (errorObject) {
       console.log("Errors handled: " + errorObject.code);   
-    });
-
-    // Clear the form's values.
-    $("#formTrainName").empty();
-    $("#formDestination").empty();
-    $("#formFirstTime").empty();
-    $("#formFrequency").empty();
-    
+    }); 
 });
 
