@@ -59,6 +59,7 @@
                                 <th scope="col">Destination</th>
                                 <th scope="col">Next Arrival</th>
                                 <th scope="col">Minutes Away</th>
+                                <th scope="col">Frequency (Minutes)</th>
                             </tr>
                         </thead>
                         <tbody id="trainScheduleBody"></tbody>
@@ -83,15 +84,15 @@
                         <input type="text" class="form-control" id="formDestination"
                             placeholder="Add City or Station Name">
                     <div class="form-row">
-                            <div class="col-7 pt-2">
-                        <label for="formFirstTime">First Train Time (24-hour format: HH:mm)</label>
+                            <div class="col-4 pt-2">
+                        <label for="formFirstTime">First Train Time (HH:mm)</label>
                         <input type="text" class="form-control" id="formFirstTime"
-                            placeholder="Add Start Time (00:00)">
+                            placeholder="24-hour format">
                         </div>
-                        <div class="col pt-2">
-                        <label for="formFrequency">Frequency (in minutes)</label>
+                        <div class="col-4 pt-2">
+                        <label for="formFrequency">Trip Frequency (in minutes)</label>
                         <input type="text" class="form-control" id="formFrequency"
-                            placeholder="Add Train's Trip Frequency (in minutes)">
+                            placeholder="(in minutes)">
                     </div>
                         </div>
                         <button type="submit" class="btn btn-warning mt-2" id="add-train-btn">Add Train</button>
